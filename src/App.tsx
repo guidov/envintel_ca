@@ -6,14 +6,6 @@ function App() {
     <div className="min-h-screen">
       {/* Hero Section with Ocean Background */}
       <div className="relative bg-gradient-to-b from-green-50 to-white">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-transparent z-10" />
-          <img
-            src="https://images.unsplash.com/photo-1497290756760-23ac55edf36f?auto=format&fit=crop&q=80"
-            alt="Ocean waves"
-            className="w-full h-[90vh] object-cover"
-          />
-        </div>
 
         {/* Navigation */}
         <nav className="container mx-auto px-6 py-6 flex justify-between items-center relative z-20">
