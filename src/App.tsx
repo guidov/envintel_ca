@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="min-h-screen">
       {/* Hero Section with Ocean Background */}
-      <div className="relative bg-gradient-to-b from-green-50 to-white">
+      <div className="relative bg-gradient-to-b from-green-900 to-green-700">
 
         {/* Navigation */}
         <nav className="container mx-auto px-6 py-6 flex justify-between items-center relative z-20">
