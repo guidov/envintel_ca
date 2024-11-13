@@ -20,7 +20,7 @@ export default function Contact() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          to: 'admin@envintel.ca',
+          to: 'admin@envintel.com',
           ...formData
         }),
       });
