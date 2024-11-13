@@ -1,4 +1,5 @@
 import { Leaf, BarChart3, Brain, ArrowRight, Mail, Globe2 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Footer from './components/Footer';
 
 function App() {
@@ -15,13 +16,13 @@ function App() {
           </div>
           <div className="flex items-center space-x-8">
             <div className="hidden md:flex items-center space-x-6">
-              <a href="/" className="text-white hover:text-green-400 transition-colors">Home</a>
-              <a href="/about" className="text-white hover:text-green-400 transition-colors">About</a>
-              <a href="/blog" className="text-white hover:text-green-400 transition-colors">Blog</a>
-              <a href="/weather-wizard" className="text-white hover:text-green-400 transition-colors">Weather Wizard</a>
+              <Link to="/" className="text-white hover:text-green-400 transition-colors">Home</Link>
+              <Link to="/about" className="text-white hover:text-green-400 transition-colors">About</Link>
+              <Link to="/blog" className="text-white hover:text-green-400 transition-colors">Blog</Link>
+              <Link to="/weather-wizard" className="text-white hover:text-green-400 transition-colors">Weather Wizard</Link>
             </div>
-            <a 
-              href="/contact" 
+            <Link 
+              to="/contact" 
               className="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition-colors flex items-center space-x-2"
             >
               <span>Contact Us</span>
