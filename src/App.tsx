@@ -13,10 +13,18 @@ function App() {
             <Leaf className="h-6 w-6 text-green-400" />
             <span className="text-2xl font-bold text-white">ENVINTEL</span>
           </div>
-          <button className="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition-colors flex items-center space-x-2">
-            <span>Contact Us</span>
-            <ArrowRight className="h-4 w-4" />
-          </button>
+          <div className="flex items-center space-x-8">
+            <div className="hidden md:flex items-center space-x-6">
+              <a href="/" className="text-white hover:text-green-400 transition-colors">Home</a>
+              <a href="/about" className="text-white hover:text-green-400 transition-colors">About</a>
+              <a href="/blog" className="text-white hover:text-green-400 transition-colors">Blog</a>
+              <a href="/weather-wizard" className="text-white hover:text-green-400 transition-colors">Weather Wizard</a>
+            </div>
+            <button className="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition-colors flex items-center space-x-2">
+              <span>Contact Us</span>
+              <ArrowRight className="h-4 w-4" />
+            </button>
+          </div>
         </nav>
 
         {/* Hero Content */}
