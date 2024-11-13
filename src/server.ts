@@ -1,7 +1,7 @@
-import express from 'express';
-import dotenv from 'dotenv';
-import cors from 'cors';
-import contactRouter from './api/contact';
+const express = require('express');
+const dotenv = require('dotenv');
+const cors = require('cors');
+const contactRouter = require('./api/contact');
 
 dotenv.config();
 
