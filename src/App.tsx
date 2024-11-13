@@ -20,10 +20,13 @@ function App() {
               <a href="/blog" className="text-white hover:text-green-400 transition-colors">Blog</a>
               <a href="/weather-wizard" className="text-white hover:text-green-400 transition-colors">Weather Wizard</a>
             </div>
-            <button className="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition-colors flex items-center space-x-2">
+            <a 
+              href="/contact" 
+              className="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition-colors flex items-center space-x-2"
+            >
               <span>Contact Us</span>
               <ArrowRight className="h-4 w-4" />
-            </button>
+            </a>
           </div>
         </nav>
 
