@@ -20,8 +20,14 @@ export default function WeatherWizard() {
     setError(null);
     
     try {
-      // Replace with your actual API endpoint and key
-      const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q=${encodeURIComponent(location)}`);
+      const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
+      if (!apiKey) {
+        throw new Error('Weather API key is not configured');
+      }
+      
+      const response = await fetch(
+        `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${encodeURIComponent(location)}`
+      );
       
       if (!response.ok) {
         throw new Error('Weather data not found');
