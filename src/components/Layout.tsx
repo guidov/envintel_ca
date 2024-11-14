@@ -17,7 +17,7 @@ export default function Layout() {
             <Link to="/" className="text-white hover:text-green-400 transition-colors">Home</Link>
             <Link to="/about" className="text-white hover:text-green-400 transition-colors">About</Link>
             <Link to="/blog" className="text-white hover:text-green-400 transition-colors">Blog</Link>
-            <Link to="/weather-wizard" className="text-white hover:text-green-400 transition-colors">Weather Wizard</Link>
+            <a href="http://localhost:5173/weather-wizard" target="_blank" rel="noopener noreferrer" className="text-white hover:text-green-400 transition-colors">Weather Wizard</a>
           </div>
           <Link 
             to="/contact" 
