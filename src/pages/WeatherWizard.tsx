@@ -1,7 +1,17 @@
-import { useState } from 'react';
-import { Cloud, Thermometer, Wind, Droplets } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Cloud, Thermometer, Wind, Droplets, Send, Menu, MessageSquare, ChevronLeft, ChevronRight, MapPin } from 'lucide-react';
+import { useGeolocation } from './WeatherWizard/app/hooks/useGeolocation';
+import ChatPanel from './WeatherWizard/components/ChatPanel';
+import { Panel, PanelGroup, PanelResizeHandle } from 'react-resizable-panels';
 
 export default function WeatherWizard() {
+  const { latitude, longitude, error } = useGeolocation();
+  const [locationString, setLocationString] = useState<string>('');
+  const [selectedMenu, setSelectedMenu] = useState('current');
+  const [time, setTime] = useState(50);
+  const [radius, setRadius] = useState(50);
+  const [leftPanelOpen, setLeftPanelOpen] = useState(true);
+  const [rightPanelOpen, setRightPanelOpen] = useState(true);
   const [location, setLocation] = useState('');
   interface WeatherData {
     temperature: number;
