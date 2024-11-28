@@ -5,7 +5,7 @@ import ChatPanel from './WeatherWizard/components/ChatPanel';
 import { Panel, PanelGroup, PanelResizeHandle } from 'react-resizable-panels';
 
 export default function WeatherWizard() {
-  const { latitude, longitude, error } = useGeolocation();
+  const { latitude, longitude, error: geoError } = useGeolocation();
   const [locationString, setLocationString] = useState<string>('');
   const [selectedMenu, setSelectedMenu] = useState('current');
   const [time, setTime] = useState(50);
