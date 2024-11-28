@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Cloud, Thermometer, Wind, Droplets, Send, Menu, MessageSquare, ChevronLeft, ChevronRight, MapPin } from 'lucide-react';
-import { useGeolocation } from '../../hooks/useGeolocation';
+import { useGeolocation } from '../hooks/useGeolocation';
 import ChatPanel from './WeatherWizard/components/ChatPanel';
 import { Panel, PanelGroup, PanelResizeHandle } from 'react-resizable-panels';
 
